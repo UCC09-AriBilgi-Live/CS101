@@ -52,7 +52,7 @@
 
             int r = 15000;
 
-            byte s = (byte)r; // ????????? weekend araştırması
+            byte s = (byte)r; // ????????? weekend araştırması yapılabiliyorsa dadından yenmez...:)
 
             Console.WriteLine("5.durum : " + s + "\n\n");
 
