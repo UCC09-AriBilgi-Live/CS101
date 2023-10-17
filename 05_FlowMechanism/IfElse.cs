@@ -94,7 +94,15 @@ namespace _05_FlowMechanism
             // girilen değerlere göre yapılan kontroller sonucu kullanıcı adınız yanlış , şifreniz yanlış, kullanı adınız ve şifreniz yanlış....Kontrol ediniz mesajı veren programcık....Yani mini bir login işlemi...
 
 
+            // Bir üniversite öğrenci not ortalaması 60 ve üzerindeyse Ortalamanız ... Geçtiniz....
+            // 1.sınav notu girilecek...
+            // 2.sınav notu da girilecek
+            // Kural 2 sınav olacak
+            // 1.sınav %40 etkili
+            // 2.sınav %60 etkili
+            // geçme notu hesaplanacak...veeeee.Parametrik olarak ekrana yazılacak.
 
+            // parametrik Console.Writeline örneği....
 
         }
     }
