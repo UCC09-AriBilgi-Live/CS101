@@ -6,7 +6,9 @@
         {
             //IfElse.Main(args);
 
-            SwitchCase.Main(args);
+            //SwitchCase.Main(args);
+
+            ForLoop.Main(args);
 
             Console.ReadKey();
         }
