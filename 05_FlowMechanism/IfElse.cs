@@ -65,26 +65,26 @@ namespace _05_FlowMechanism
 
             // ekrandan cinsiyet bilgisini tek bir karakter olarak alıp kontrol edip Erkeksiniz Kadınsınız gibi mesajlar verilecek..yani program sadece e,k karakterlerine duyarlı olacak. diğer baska karakter girilmesinde doğru karakter bilgisi girilmesi mesaj olarak verilecek..Not: ekrandan alınan bilgiyi bellekte en az yer kaplayacak şekilde düşününüz.
 
-            Console.WriteLine("Lütfen cinsiyetinizi giriniz...");
+            //Console.WriteLine("Lütfen cinsiyetinizi giriniz...");
 
-            char cins;
+            //char cins;
 
-            cins = Convert.ToChar(Console.ReadLine());
+            //cins = Convert.ToChar(Console.ReadLine());
 
-            if (cins == 'E' || cins=='e') // hem büyük hem de küçük karaktere duyarlı oldu.(OR / VEYA kontrolu
-            {
-                Console.WriteLine("ERKEKSİNİZ...");
-            }
-            else if (cins == 'K' || cins=='k')
-            {
-                Console.WriteLine("KADINSINIZ...");
-            }
-            else { Console.WriteLine("Lütfen cinsiyetinizi doğru giriniz...."); }
+            //if (cins == 'E' || cins=='e') // hem büyük hem de küçük karaktere duyarlı oldu.(OR / VEYA kontrolu
+            //{
+            //    Console.WriteLine("ERKEKSİNİZ...");
+            //}
+            //else if (cins == 'K' || cins=='k')
+            //{
+            //    Console.WriteLine("KADINSINIZ...");
+            //}
+            //else { Console.WriteLine("Lütfen cinsiyetinizi doğru giriniz...."); }
 
 
-            // bir mesaj daha gelecek...Lütfen yaşınızı giriniz diye. ama sadece Erkeklere soracak
+            //// bir mesaj daha gelecek...Lütfen yaşınızı giriniz diye. ama sadece Erkeklere soracak
 
-            Console.WriteLine("Lütfen yaşınızı giriniz...");
+            //Console.WriteLine("Lütfen yaşınızı giriniz...");
 
 
             // Programın içinde iki tane sabit değerimiz olacak(userid,passw gibi)
@@ -103,6 +103,23 @@ namespace _05_FlowMechanism
             // geçme notu hesaplanacak...veeeee.Parametrik olarak ekrana yazılacak.
 
             // parametrik Console.Writeline örneği....
+
+            string name,surname,age;
+
+            Console.Write("Lütfen adınızı giriniz : ");
+            name =Console.ReadLine();
+
+            Console.Write("Lütfen soyadınızı  giriniz : ");
+            surname = Console.ReadLine();
+
+            Console.Write("Lütfen soyadınızı  giriniz : ");
+            age = Console.ReadLine();
+
+            //Console.WriteLine("Girmiş olduğunuz bilgi : " + name);
+            // değişik bir format
+            Console.WriteLine("Girmiş olduğunuz bilgi : Adınız - {0} Soyadınız - {1}, Yaşınız - {2}",name,surname,age);
+
+            Console.ReadKey();
 
         }
     }
