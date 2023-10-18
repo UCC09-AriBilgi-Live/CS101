@@ -55,26 +55,70 @@ namespace _05_FlowMechanism
             // ekrandan baslangıç ve bitiş değerleri alınacak
             // bu sınırlar içersinde 5 e tam bölünebilen ama 7 ye tam bölünemeyen sayıları alt alta listeleyen, bu sayılardan kaç tane olduğu bulan , bi de bu sayıları toplaycak zımbırtıyı geliştiriniz. kopiş...mod kullanılacak...
 
-            int bas, bitis, adet=0, toplam=0;
+            //int bas, bitis, adet=0, toplam=0;
 
-            Console.WriteLine("Başlangıç giriniz :");
-            bas =Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Başlangıç giriniz :");
+            //bas =Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Bitiş giriniz :");
-            bitis = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Bitiş giriniz :");
+            //bitis = Convert.ToInt32(Console.ReadLine());
 
-            for (int sayac = bas; sayac <= bitis; sayac++)
+            //for (int sayac = bas; sayac <= bitis; sayac++)
+            //{
+            //    if (sayac % 5 == 0 && sayac % 7 != 0)
+            //    {
+            //        toplam+=sayac;
+            //        adet++;
+
+            //        Console.WriteLine("Sayı : {0} - Şu anki toplam : {1}", sayac, toplam);
+            //    }
+            //}
+
+            //Console.WriteLine("\n\n\t5'e bölünen 7'ye bölünemeyen sayıların adedi {0} tanedir...",adet);
+
+            // Konsol ekranına girilen 0 ila 100 (sınırlar dahil) arasındaki 3 notun en büyüğünü, en küçüğünü ve ortalamasını bulan gösteren programcık...Yaniiii....Bubble Sort
+
+            int bnot = 0, knot = 0;
+            double toplam=0;
+
+            for (int sayac = 0,not; sayac < 3; sayac++) // satırda 1 değişgen daha tanımlayabiliyoruz.
             {
-                if (sayac % 5 == 0 && sayac % 7 != 0)
-                {
-                    toplam+=sayac;
-                    adet++;
+                Console.WriteLine("Lütfen {0}. notunuzu giriniz : ", sayac + 1); // dinamik olarak mesaj veriyoruz....
 
-                    Console.WriteLine("Sayı : {0} - Şu anki toplam : {1}", sayac, toplam);
+                not = Convert.ToInt32(Console.ReadLine()); // notumu okudum
+
+                if (not > 100 || not < 0) // notum 0-100 aralığında olmalı
+                {
+                    Console.WriteLine("Yanlış not girdiniz..Lütfen tekrar giriniz");
+                    sayac--;
+                    continue; // continue olunca aşağıya devam etmeden yine for çevrimini bir onceki sayactan devam ediyor
                 }
+
+                if (sayac == 0) // yani daha ilk sayıyı okumuşum 
+                {
+                    bnot = not;
+                    knot = not;
+                }
+                else
+                { // duruma göre değişim işlemi yapılıyor
+                    if (not > bnot) //not bnot dan büyükse artık bnot'un benim girdiğim not dur.
+                        bnot = not;
+
+                    if (not < knot)
+                        knot = not;
+
+                }
+
+                toplam += not;
+
             }
 
-            Console.WriteLine("\n\n\t5'e bölünen 7'ye bölünemeyen sayıların adedi {0} tanedir...",adet);
+            Console.WriteLine("En büyük not : {0}\nEn küçük not : {1}\nOrtalama : {2}",bnot,knot,toplam/3);
+
+
+            //ekrandan girilen 10 sayı içinde pozitif olup ve tek olan sayıların ayrı ayrı çarpımını bulan program parçacığı...(zımbırtı...)
+
+
 
         }
     }
