@@ -90,7 +90,7 @@ namespace _05_FlowMechanism
                 if (not > 100 || not < 0) // notum 0-100 aralığında olmalı
                 {
                     Console.WriteLine("Yanlış not girdiniz..Lütfen tekrar giriniz");
-                    sayac--;
+                    sayac--;// sayac=sayac-1;
                     continue; // continue olunca aşağıya devam etmeden yine for çevrimini bir onceki sayactan devam ediyor
                 }
 

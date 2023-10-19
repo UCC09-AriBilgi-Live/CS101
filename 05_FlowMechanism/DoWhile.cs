@@ -82,7 +82,7 @@ namespace _05_FlowMechanism
                 Console.WriteLine("Lütfen şifrenizi giriniz : ");
                 vs_EkranKulSifre= Console.ReadLine();
 
-                if (vs_kAdi==vs_EkranKulAd && vs_kSifre==vs_EkranKulSifre)
+                if (vs_kAdi.Equals(vs_EkranKulAd) && vs_kSifre.Equals(vs_EkranKulSifre))
                 {
                     // yani herşey doğru hoşgeldin durumu
 
