@@ -88,11 +88,11 @@ namespace _06_Functions
             #region Concat
             //Concat metodu string ifadeleri kısaca birleştirmek için kullanılan metod'dur. Verilen ifadeleri ard arda ekler ve geriye string olarak değer döndürmektedir.
 
-            string y1 = "Bugün günlerden ";
+            string y1 = "Bugün günlerden";
             string y2 = "dünya kedi günü...";
             int age = 4;
 
-            Console.WriteLine("Sonuç : {0} yaş",String.Concat(y1, y2,age));
+            Console.WriteLine("Sonuç : {0} yaş",String.Concat(y1," ", y2," Hardal'ın yaşı : ",age));
 
             #endregion
 
