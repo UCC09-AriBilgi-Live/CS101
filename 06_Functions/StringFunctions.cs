@@ -20,6 +20,8 @@ namespace _06_Functions
             Console.WriteLine("\n\n");
 
             #region Length
+            // Length metodu string ifadelerde kullanıldığında metnin kaç karakterden oluştuğunu bulmak için kullanılmaktadır. İnt türünde değer döndürmektedir.
+
 
             //string metin = "Arı Bilgi'de C# öğreniyoruz...";
 
@@ -28,6 +30,9 @@ namespace _06_Functions
             #endregion
 
             #region ToLower(),ToUpper()
+            // ToLower metodu string değişken içinde bulunan metnin tamamını küçük harfe dönüştürmek için kullanılmaktadır. 
+
+            // ToUpper metodu string değişken içinde bulunan metnin tamamını büyük harfe dönüştürmek için kullanılmaktadır. 
 
             //string metin = "Arı Bilgi'de C# öğreniyoruz...";
             //string metin1 = "MCSD KURSu...";
@@ -38,30 +43,51 @@ namespace _06_Functions
             #endregion
 
             #region Compare()
+            // Compare metodu türkçe kelime karşılığından da anlaşıldığı üzere karşılaştırma işlemi yapmaktadır. İki string ifadenin karşılaştırılması için kullanılmaktadır. String ifadelerin 1. karakterinden itibaren karakter karakter karşılaştırma işlemi yapar ve buna görede integer(tamsayı) bir değer geri döndürür. Geri dönen değerler:
 
-            string metin1 = "McsD";
-            string metin2 = "McSd";
+            /*  0 : Geri dönen değer 0 (sıfır) olduğunda iki metin tamamen eşit demektir. (metin1=metin2)
+                1 : Geri dönen değer 1(bir) olduğunda birinci metnin karşılaştırılan karakteri diğer karakterden büyük olduğu anlamına gelmektedir. (metin1 > metin2)
+                - 1 : Geri dönen değer - 1(eksi bir) olduğunda birinci metnin karşılaştırılan karakteri diğer karakterden küçük olduğu anlamına gelmektedir..(metin1 < metin2)
+            */
 
-            int sonuc=String.Compare(metin1, metin2);
+            // Compare Metodu Büyük-Küçük Harfe Duyarlı-Duyarsız
+            // Compare metodunun büyük küçük harfe duyarlı veya duyarsız olarak yapmak için compare metoduna 3. parametre eklenir ve bu parametre boolean yani true veya false değeridir. Bu değerlerden:
 
-            switch (sonuc)
-            {
-                case 0:
-                    Console.WriteLine("Her iki metin de aynı");
-                    break;
-                case 1:
-                    Console.WriteLine("1. metin büyüktür...");
-                    break;
-                case -1:
-                    Console.WriteLine("2. metin büyüktür...");
-                    break;
-                default:
-                    break;
-            }
+            //string degisken1, degisken2;
+            //int sonuc;
+
+            //degisken1 = "MCSD";
+            //degisken2 = "Mcsd";
+
+            //sonuc = String.Compare(degisken1, degisken2, true);
+
+            //Console.WriteLine(sonuc);
+
+            //string metin1 = "McsD";
+            //string metin2 = "McSd";
+
+            //int sonuc=String.Compare(metin1, metin2);
+
+            //switch (sonuc)
+            //{
+            //    case 0:
+            //        Console.WriteLine("Her iki metin de aynı");
+            //        break;
+            //    case 1:
+            //        Console.WriteLine("1. metin büyüktür...");
+            //        break;
+            //    case -1:
+            //        Console.WriteLine("2. metin büyüktür...");
+            //        break;
+            //    default:
+            //        break;
+            //}
 
             #endregion
 
             #region Concat
+            //Concat metodu string ifadeleri kısaca birleştirmek için kullanılan metod'dur. Verilen ifadeleri ard arda ekler ve geriye string olarak değer döndürmektedir.
+
             string y1 = "Bugün günlerden ";
             string y2 = "dünya kedi günü...";
             int age = 4;
