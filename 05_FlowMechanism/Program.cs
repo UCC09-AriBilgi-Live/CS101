@@ -8,7 +8,9 @@
 
             //SwitchCase.Main(args);
 
-            ForLoop.Main(args);
+            //ForLoop.Main(args);
+
+            DoWhile.Main(args);
 
             Console.ReadKey();
         }
