@@ -71,8 +71,12 @@ namespace _06_Functions
 
             #region Floor
 
+            double sayi = Math.Floor(8.99);
+
+
             Console.WriteLine("Sonuc : {0} \n\n", Math.Floor(3.01));
-            Console.WriteLine("Sonuc : {0} ", Math.Floor(9.99));
+
+            Console.WriteLine("Sonuc : {0} ", sayi);
             
             #endregion
         }

@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            MathFunctions.Main(args);
-
+            //MathFunctions.Main(args);
+            StringFunctions.Main(args);
 
             Console.ReadKey();
         }
