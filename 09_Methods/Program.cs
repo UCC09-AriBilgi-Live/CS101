@@ -1,16 +1,13 @@
-﻿namespace _07_Arrays
+﻿namespace _09_Methods
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.Clear();
-
-            //DiziGenel.Main(args);
-
-            DiziDongu.Main(args);
+            Sample1.Main(args);
 
             Console.ReadKey();
+            
         }
     }
 }
