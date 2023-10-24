@@ -31,13 +31,21 @@ namespace _09_Methods
 
             #region 3.Geriye değer döndüren ve parametre almayan metot
 
-            int sonuc = HesaplaPrmsiz();
+            //int sonuc = HesaplaPrmsiz();
 
-            Console.WriteLine("Alan : {0}",sonuc);
+            //Console.WriteLine("Alan : {0}",sonuc);
 
             #endregion
 
             #region 4.Geriye değer döndüren ve parametre alan metot
+
+            Console.WriteLine("Kısa kenar : ");
+            int kk = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Uzun kenar : ");
+            int uk = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Alan={0}dır ", HesaplaPrmli(kk, uk));
+
 
             #endregion
 
@@ -76,6 +84,11 @@ namespace _09_Methods
             int alan = kk * uk;
 
             return alan;
+        }
+
+        private static int HesaplaPrmli(int kisa,int uzun) 
+        {
+            return kisa*uzun;
         }
     }
 }
